@@ -1,0 +1,36 @@
+### NTLM v1 Auditing ###
+<QueryList>
+<Query Id="0" Path="Security">
+<Select Path="Security">
+*[EventData[Data[@Name='LmPackageName'] and (Data='NTLM V1')]]
+</Select>
+</Query>
+</QueryList>
+
+### NTLM v2 Auditing ###
+<QueryList>
+<Query Id="0" Path="Security">
+<Select Path="Security">
+*[EventData[Data[@Name='LmPackageName'] and (Data='NTLM V2')]]
+</Select>
+</Query>
+</QueryList>
+
+
+### LM Auditing ###
+<QueryList>
+<Query Id="0" Path="Security">
+<Select Path="Security">
+*[EventData[Data[@Name='LmPackageName'] and (Data='LM')]]
+</Select>
+</Query>
+</QueryList>
+
+### Kerberos Auditing ###
+<QueryList>
+<Query Id="0" Path="Security">
+<Select Path="Security">
+*[EventData[Data[@Name='LmPackageName'] and (Data='kerberos')]]
+</Select>
+</Query>
+</QueryList>
